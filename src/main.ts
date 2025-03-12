@@ -14,6 +14,13 @@ async function bootstrap() {
     }),
   );
 
+  // Habilitar CORS
+  app.enableCors({
+    origin: '*', // Permite todas las solicitudes (ajústalo según sea necesario)
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+    allowedHeaders: 'Content-Type, Authorization',
+  });
+
   //Configuración de Swagger
   const config = new DocumentBuilder()
     .setTitle('ms-bff-web')
