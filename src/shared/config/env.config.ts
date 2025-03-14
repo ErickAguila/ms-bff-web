@@ -4,7 +4,7 @@ dotenv.config();
 export const configVar = {
   PORT: Number(process.env.PORT),
   URL_MS_BS_USER: process.env.URL_MS_BS_USER,
-  URL_MS_BS_PRODUCT: process.env.URL_MS_BS_PRODUCT,
+  URL_MS_BS_SALE: process.env.URL_MS_BS_SALE,
 };
 
 export const configEnv = () => configVar;
